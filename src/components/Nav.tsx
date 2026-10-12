@@ -19,13 +19,13 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 px-6 transition-all duration-300 ${
         scrolled ? 'border-b border-line bg-bg/80 backdrop-blur-md' : 'border-b border-transparent'
       }`}
     >
-      <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
-        <a href="#top" className="font-serif text-2xl italic tracking-tight">
-          aa.
+      <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between">
+        <a href="#top" className="text-base font-semibold tracking-tight">
+          Abdalla<span className="text-accent">.</span>
         </a>
         <ul className="flex items-center gap-1 text-sm">
           {links.map((link) => (
