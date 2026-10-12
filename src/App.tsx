@@ -1,5 +1,15 @@
+import { Hero } from './components/Hero'
+import { Nav } from './components/Nav'
+
 function App() {
-  return <main className="min-h-screen" />
+  return (
+    <>
+      <Nav />
+      <main>
+        <Hero />
+      </main>
+    </>
+  )
 }
 
 export default App

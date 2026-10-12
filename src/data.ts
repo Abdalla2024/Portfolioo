@@ -20,7 +20,6 @@ export const profileImage = profile
 export const hero = {
   name: 'Abdalla Abdelmagid',
   role: 'Software Engineer & iOS Developer',
-  oneLiner: 'I design, build, and ship apps people actually use.',
   location: 'Baltimore, MD',
   bio: 'Computer Science graduate from Towson University. I’ve shipped 14 native iOS apps to the App Store and build full-stack systems with Swift, React, and modern backend tools.',
 }
