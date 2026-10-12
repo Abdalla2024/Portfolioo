@@ -53,7 +53,7 @@ export const experience: Experience[] = [
       'Translated stakeholder needs into AI workflow requirements, validation rules, and human approval checkpoints',
       'Designed multi-step AI workflows with evidence tracking, error handling, and state management to support reliable business processes',
     ],
-    tech: ['AI Workflows', 'Automation', 'Requirements Gathering', 'Human-in-the-Loop', 'State Management'],
+    tech: ['AI Workflows', 'Automation', 'Stakeholder Requirements Gathering', 'Prompt Engineering', 'Workflow Design & Validation'],
   },
   {
     role: 'Independent iOS Developer',
