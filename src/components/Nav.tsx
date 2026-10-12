@@ -25,7 +25,7 @@ export function Nav() {
     >
       <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between">
         <a href="#top" className="text-base font-semibold tracking-tight">
-          Abdalla<span className="text-accent">.</span>
+          Abdalla
         </a>
         <ul className="flex items-center gap-1 text-sm">
           {links.map((link) => (
