@@ -35,7 +35,7 @@ export function Apps() {
                     }`}
                   />
                   <span
-                    className={`w-full truncate text-center text-[11px] transition-colors sm:text-xs ${
+                    className={`line-clamp-2 w-full text-center text-[11px] leading-tight transition-colors sm:text-xs ${
                       active ? 'font-medium text-fg' : 'text-muted'
                     }`}
                   >

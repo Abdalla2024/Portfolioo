@@ -6,7 +6,7 @@ const delay = (i: number) => ({ '--i': i }) as CSSProperties
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden px-6 pt-36 pb-24 sm:pt-44 sm:pb-32">
+    <section id="top" className="relative overflow-hidden px-6 pt-32 pb-8 sm:pt-44 sm:pb-24">
       {/* Soft accent glow */}
       <div
         aria-hidden="true"
