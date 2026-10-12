@@ -10,6 +10,18 @@
   --color-muted: var(--muted);
   --color-line: var(--line);
   --color-accent: var(--accent);
+
+  --animate-nudge: nudge 1.6s ease-in-out infinite;
+
+  @keyframes nudge {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(3px);
+    }
+  }
 }
 
 :root {
@@ -45,6 +57,13 @@ body {
 ::selection {
   background: var(--accent);
   color: white;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 /* Entrance animations */
