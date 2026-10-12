@@ -1,3 +1,4 @@
+import { Apps } from './components/Apps'
 import { Experience } from './components/Experience'
 import { Hero } from './components/Hero'
 import { Nav } from './components/Nav'
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Hero />
         <Experience />
+        <Apps />
       </main>
     </>
   )

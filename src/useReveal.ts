@@ -1,21 +1,30 @@
 import { useEffect } from 'react'
 
-// Adds `is-visible` to every `.reveal` element once it scrolls into view.
+// Adds `is-visible` to every `.reveal` element once it scrolls into view,
+// including elements rendered later (e.g. after "Show all").
 export function useReveal() {
   useEffect(() => {
-    const els = document.querySelectorAll<HTMLElement>('.reveal:not(.is-visible)')
-    const observer = new IntersectionObserver(
+    const io = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-visible')
-            observer.unobserve(entry.target)
+            io.unobserve(entry.target)
           }
         }
       },
       { rootMargin: '0px 0px -10% 0px' },
     )
-    els.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
+    const observeAll = () =>
+      document.querySelectorAll('.reveal:not(.is-visible)').forEach((el) => io.observe(el))
+
+    observeAll()
+    const mo = new MutationObserver(observeAll)
+    mo.observe(document.body, { childList: true, subtree: true })
+
+    return () => {
+      io.disconnect()
+      mo.disconnect()
+    }
   }, [])
 }
