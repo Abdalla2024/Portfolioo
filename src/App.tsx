@@ -1,4 +1,5 @@
 import { Apps } from './components/Apps'
+import { Contact } from './components/Contact'
 import { Experience } from './components/Experience'
 import { Hero } from './components/Hero'
 import { Nav } from './components/Nav'
@@ -16,6 +17,7 @@ function App() {
         <Experience />
         <Apps />
         <Projects />
+        <Contact />
       </main>
     </>
   )
