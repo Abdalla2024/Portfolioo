@@ -1,6 +1,7 @@
 import profile from './assets/profile.jpg'
 import bookdLogo from './assets/logos/bookd.png'
 import hqLogo from './assets/logos/hq.png'
+import justVenturesLogo from './assets/logos/justventures.jpg'
 import nsfLogo from './assets/logos/nsf.png'
 import revatureLogo from './assets/logos/revature.png'
 import tuLogo from './assets/logos/tu.png'
@@ -41,6 +42,19 @@ export type Experience = {
 }
 
 export const experience: Experience[] = [
+  {
+    role: 'AI Builder Fellow',
+    company: 'AI Builder Fellowship',
+    location: 'Baltimore, MD',
+    period: 'Sep 2026 — Present',
+    logo: justVenturesLogo,
+    points: [
+      'Interviewed business owners to identify operational challenges and opportunities for AI automation',
+      'Translated stakeholder needs into AI workflow requirements, validation rules, and human approval checkpoints',
+      'Designed multi-step AI workflows with evidence tracking, error handling, and state management to support reliable business processes',
+    ],
+    tech: ['AI Workflows', 'Automation', 'Requirements Gathering', 'Human-in-the-Loop', 'State Management'],
+  },
   {
     role: 'Independent iOS Developer',
     company: 'Self-Employed',
