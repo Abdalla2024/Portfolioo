@@ -1,9 +1,6 @@
 import profile from './assets/profile.jpg'
 import bookdLogo from './assets/logos/bookd.png'
-import hqLogo from './assets/logos/hq.png'
 import justVenturesLogo from './assets/logos/justventures.jpg'
-import nsfLogo from './assets/logos/nsf.png'
-import revatureLogo from './assets/logos/revature.png'
 import tuLogo from './assets/logos/tu.png'
 
 const icons = import.meta.glob<string>('./assets/apps/*.jpg', { eager: true, import: 'default' })
@@ -49,9 +46,10 @@ export const experience: Experience[] = [
     period: 'Sep 2026 — Present',
     logo: justVenturesLogo,
     points: [
-      'Interviewed business owners to identify operational challenges and opportunities for AI automation',
-      'Translated stakeholder needs into AI workflow requirements, validation rules, and human approval checkpoints',
-      'Designed multi-step AI workflows with evidence tracking, error handling, and state management to support reliable business processes',
+      'Interviewed business owners to identify operational bottlenecks and prioritize opportunities for AI automation',
+      'Translated stakeholder requirements into AI workflows with validation rules and human approval checkpoints',
+      'Designed multi-step workflows that tracked evidence and flagged missing or conflicting information before decisions',
+      'Tested workflow outputs against defined scenarios, identifying failure cases and improving reliability through iterative refinement',
     ],
     tech: ['AI Workflows', 'Automation', 'Prompt Engineering', 'Stakeholder Requirements Gathering', 'Workflow Design & Validation'],
   },
@@ -59,12 +57,12 @@ export const experience: Experience[] = [
     role: 'Independent iOS Developer',
     company: 'Self-Employed',
     location: 'Remote',
-    period: 'Jan 2025 — Present',
+    period: 'Jan 2025 — Oct 2026',
     logo: bookdLogo,
     points: [
       'Shipped 14 native iOS apps to the App Store, reaching over 10,000 downloads and maintaining a 4.6 average rating',
-      'Took apps through the entire lifecycle, from concept and Figma design to development, testing, and successful App Store launches',
-      'Monetized apps through subscriptions and in-app purchases, generating over $1,000 of monthly recurring revenue',
+      'Managed the full product lifecycle, from concept and Figma design through development, testing, and App Store launch',
+      'Monetized apps through subscriptions and in-app purchases, generating over $1,000 in monthly recurring revenue',
     ],
     tech: ['Swift', 'SwiftUI', 'UIKit', 'StoreKit', 'MVVM', 'Combine', 'Async/Await'],
   },
@@ -75,50 +73,11 @@ export const experience: Experience[] = [
     period: 'Sep 2024 — May 2025',
     logo: tuLogo,
     points: [
-      'Tutored university students in Object-Oriented Programming and Data Structures & Algorithms, simplifying complex concepts',
-      'Provided personalized guidance and problem-solving strategies to strengthen students’ coding and logical thinking',
-      'Assisted with coding assignments, exam preparation, and debugging, leading to improved academic performance',
+      'Tutored university students in object-oriented programming and data structures and algorithms',
+      'Explained complex programming concepts, debugging techniques, and problem-solving strategies to strengthen students’ coding skills',
+      'Guided students through coding assignments and exam preparation, adapting explanations to their individual learning needs',
     ],
     tech: ['Java', 'Python', 'Data Structures', 'Algorithms', 'OOP'],
-  },
-  {
-    role: 'Data Science Research Fellow',
-    company: 'National Science Foundation',
-    location: 'Baltimore, MD',
-    period: 'Sep 2024 — Dec 2024',
-    logo: nsfLogo,
-    points: [
-      'Analyzed Baltimore City crime and resource datasets with Python (pandas) and SQL, applying regression and clustering to uncover correlations',
-      'Built interactive Tableau dashboards and Matplotlib visualizations to highlight key trends',
-      'Presented insights and policy recommendations to NSF and university stakeholders',
-    ],
-    tech: ['Python', 'Pandas', 'SQL', 'Tableau', 'Matplotlib'],
-  },
-  {
-    role: 'Software Engineer Intern',
-    company: 'Revature',
-    location: 'Remote',
-    period: 'May 2024 — Aug 2024',
-    logo: revatureLogo,
-    points: [
-      'Engineered 6 RESTful API endpoints in Java/Spring Boot with JWT authentication, securing data for 1,000+ users',
-      'Optimized database queries with Spring Data JPA, reducing latency by 30%',
-      'Authored 15+ unit and integration tests with JUnit 5 and Mockito, catching recurring bugs before they shipped',
-    ],
-    tech: ['Java', 'Spring Boot', 'JWT', 'Spring Data JPA', 'JUnit 5', 'Mockito'],
-  },
-  {
-    role: 'Software Engineer Intern',
-    company: 'HQLABS',
-    location: 'Columbia, MD',
-    period: 'May 2023 — Aug 2023',
-    logo: hqLogo,
-    points: [
-      'Developed responsive front-end features in React and TypeScript for a real-time financial transaction monitoring dashboard',
-      'Built and integrated RESTful services to process financial transaction data, improving reliability and performance',
-      'Collaborated in an Agile environment using Git and CI/CD pipelines to streamline delivery',
-    ],
-    tech: ['React', 'TypeScript', 'REST APIs', 'CI/CD'],
   },
 ]
 
