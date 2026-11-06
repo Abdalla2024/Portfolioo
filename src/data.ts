@@ -1,6 +1,7 @@
 import profile from './assets/profile.jpg'
 import bookdLogo from './assets/logos/bookd.png'
 import justVenturesLogo from './assets/logos/justventures.jpg'
+import ekibenLogo from './assets/logos/ekiben.png'
 
 const icons = import.meta.glob<string>('./assets/apps/*.jpg', { eager: true, import: 'default' })
 const shots = import.meta.glob<string>('./assets/shots/*/*.jpg', { eager: true, import: 'default' })
@@ -16,9 +17,9 @@ export const profileImage = profile
 
 export const hero = {
   name: 'Abdalla Abdelmagid',
-  role: 'Software Engineer & iOS Developer',
+  role: 'AI Builder Fellow · Software Engineer',
   location: 'Baltimore, MD',
-  bio: 'Computer Science graduate from Towson University. I’ve shipped 14 native iOS apps to the App Store and build full-stack systems with Swift, React, and modern backend tools.',
+  bio: 'I work with teams to understand operational challenges and build practical AI applications and automations, including tools for inventory ordering, product pricing, store operations, and management reporting.',
 }
 
 export const stats = [
@@ -43,7 +44,7 @@ export const experience: Experience[] = [
     company: 'Ekiben',
     location: 'Baltimore, MD',
     period: 'Oct 2026 — Present',
-    logo: null,
+    logo: ekibenLogo,
     points: [
       'Collaborate directly with the Chief of Staff and managers to understand operational challenges, gather requirements, and identify opportunities for technical solutions.',
       'Build internal applications and automation tools based on stakeholder needs, including operational dashboards, project tracking systems, and interactive employee training platforms.',
