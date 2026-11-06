@@ -27,7 +27,11 @@ export function Experience() {
                 {/* Node */}
                 <div className="relative z-10 col-start-1 row-start-1 flex justify-center md:col-start-2">
                   <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-line bg-surface shadow-sm">
-                    <img src={job.logo} alt="" className="h-7 w-7 rounded-full object-contain" />
+                    {job.logo ? (
+                      <img src={job.logo} alt="" className="h-7 w-7 rounded-full object-contain" />
+                    ) : (
+                      <span className="text-sm font-semibold text-accent" aria-hidden="true">E</span>
+                    )}
                   </span>
                   {isCurrent && (
                     <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
@@ -80,13 +84,15 @@ function JobCard({ job, isCurrent, cardOnLeft }: { job: Job; isCurrent: boolean;
         ))}
       </ul>
 
-      <ul className="mt-6 flex flex-wrap gap-1.5">
-        {job.tech.map((t) => (
-          <li key={t} className="rounded-md bg-bg px-2 py-1 text-xs text-muted">
-            {t}
-          </li>
-        ))}
-      </ul>
+      {job.tech.length > 0 && (
+        <ul className="mt-6 flex flex-wrap gap-1.5">
+          {job.tech.map((t) => (
+            <li key={t} className="rounded-md bg-bg px-2 py-1 text-xs text-muted">
+              {t}
+            </li>
+          ))}
+        </ul>
+      )}
     </article>
   )
 }

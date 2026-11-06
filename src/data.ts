@@ -1,7 +1,6 @@
 import profile from './assets/profile.jpg'
 import bookdLogo from './assets/logos/bookd.png'
 import justVenturesLogo from './assets/logos/justventures.jpg'
-import tuLogo from './assets/logos/tu.png'
 
 const icons = import.meta.glob<string>('./assets/apps/*.jpg', { eager: true, import: 'default' })
 const shots = import.meta.glob<string>('./assets/shots/*/*.jpg', { eager: true, import: 'default' })
@@ -24,7 +23,7 @@ export const hero = {
 
 export const stats = [
   { value: '14', label: 'Apps shipped' },
-  { value: '10K+', label: 'Downloads' },
+  { value: '7K+', label: 'Downloads' },
   { value: '4.6★', label: 'Average rating' },
 ]
 
@@ -33,7 +32,7 @@ export type Experience = {
   company: string
   location: string
   period: string
-  logo: string
+  logo: string | null
   points: string[]
   tech: string[]
 }
@@ -41,43 +40,43 @@ export type Experience = {
 export const experience: Experience[] = [
   {
     role: 'AI Builder Fellow',
+    company: 'Ekiben',
+    location: 'Baltimore, MD',
+    period: 'Oct 2026 — Present',
+    logo: null,
+    points: [
+      'Collaborate directly with the Chief of Staff and managers to understand operational challenges, gather requirements, and identify opportunities for technical solutions.',
+      'Build internal applications and automation tools based on stakeholder needs, including operational dashboards, project tracking systems, and interactive employee training platforms.',
+      'Develop data-driven workflows to streamline inventory ordering, product pricing, store operations, and management reporting.',
+    ],
+    tech: [],
+  },
+  {
+    role: 'AI Builder Fellow',
     company: 'Just Ventures',
     location: 'Baltimore, MD',
     period: 'Sep 2026 — Present',
     logo: justVenturesLogo,
     points: [
-      'Interviewed business owners to identify operational bottlenecks and prioritize opportunities for AI automation',
-      'Translated stakeholder requirements into AI workflows with validation rules and human approval checkpoints',
-      'Designed multi-step workflows that tracked evidence and flagged missing or conflicting information before decisions',
-      'Tested workflow outputs against defined scenarios, identifying failure cases and improving reliability through iterative refinement',
+      'Interviewed business owners to identify operational bottlenecks and prioritize opportunities for AI automation.',
+      'Translated stakeholder requirements into AI workflows with validation rules and human approval checkpoints.',
+      'Designed multi-step workflows that tracked evidence and flagged missing or conflicting information before decisions.',
+      'Tested workflow outputs against defined scenarios, identifying failure cases and improving reliability through iterative refinement.',
     ],
-    tech: ['AI Workflows', 'Automation', 'Prompt Engineering', 'Stakeholder Requirements Gathering', 'Workflow Design & Validation'],
+    tech: [],
   },
   {
     role: 'Independent iOS Developer',
     company: 'Self-Employed',
     location: 'Remote',
-    period: 'Jan 2025 — Oct 2026',
+    period: 'Jan 2025 — Apr 2026',
     logo: bookdLogo,
     points: [
-      'Shipped 14 native iOS apps to the App Store, reaching over 10,000 downloads and maintaining a 4.6 average rating',
-      'Managed the full product lifecycle, from concept and Figma design through development, testing, and App Store launch',
-      'Monetized apps through subscriptions and in-app purchases, generating over $1,000 in monthly recurring revenue',
+      'Shipped 14 native iOS apps to the App Store, reaching over 7,000 downloads and maintaining a 4.6 average rating.',
+      'Managed the full product lifecycle, from concept and Figma design through development, testing, and App Store launch.',
+      'Generated over $1,500 in revenue through app subscriptions and in-app purchases.',
     ],
-    tech: ['Swift', 'SwiftUI', 'UIKit', 'StoreKit', 'MVVM', 'Combine', 'Async/Await'],
-  },
-  {
-    role: 'Computer Science Tutor',
-    company: 'Towson University',
-    location: 'Towson, MD',
-    period: 'Sep 2024 — May 2025',
-    logo: tuLogo,
-    points: [
-      'Tutored university students in object-oriented programming and data structures and algorithms',
-      'Explained complex programming concepts, debugging techniques, and problem-solving strategies to strengthen students’ coding skills',
-      'Guided students through coding assignments and exam preparation, adapting explanations to their individual learning needs',
-    ],
-    tech: ['Java', 'Python', 'Data Structures', 'Algorithms', 'OOP'],
+    tech: [],
   },
 ]
 
