@@ -50,7 +50,7 @@ export const experience: Experience[] = [
       'Build internal applications and automation tools based on stakeholder needs, including operational dashboards, project tracking systems, and interactive employee training platforms.',
       'Develop data-driven workflows to streamline inventory ordering, product pricing, store operations, and management reporting.',
     ],
-    tech: [],
+    tech: ['AI Workflows', 'Automation', 'Requirements Gathering', 'Internal Tools', 'Data-driven Workflows'],
   },
   {
     role: 'AI Builder Fellow',
@@ -64,7 +64,7 @@ export const experience: Experience[] = [
       'Designed multi-step workflows that tracked evidence and flagged missing or conflicting information before decisions.',
       'Tested workflow outputs against defined scenarios, identifying failure cases and improving reliability through iterative refinement.',
     ],
-    tech: [],
+    tech: ['AI Workflows', 'Automation', 'Prompt Engineering', 'Stakeholder Requirements Gathering', 'Workflow Design & Validation'],
   },
   {
     role: 'Independent iOS Developer',
@@ -77,7 +77,7 @@ export const experience: Experience[] = [
       'Managed the full product lifecycle, from concept and Figma design through development, testing, and App Store launch.',
       'Generated over $1,500 in revenue through app subscriptions and in-app purchases.',
     ],
-    tech: [],
+    tech: ['Swift', 'SwiftUI', 'UIKit', 'StoreKit', 'MVVM', 'Combine', 'Async/Await'],
   },
 ]
 
